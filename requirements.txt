@@ -1,0 +1,7 @@
+appdirs==1.4.3
+cefpython3==56.1
+pygame==1.9.3
+PyOpenGL==3.1.0
+numpy==1.12.1+mkl
+opencv-python==3.2.0
+scikit-learn==0.18.1
