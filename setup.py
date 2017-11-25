@@ -22,14 +22,19 @@ setup(name='endless_bot',
       author_email='axel@isouard.fr',
       license='MIT',
       packages=['endless_bot'],
+      setup_requires=[
+            'numpy',
+            'scipy'
+      ],
       install_requires=[
             'appdirs==1.4.3',
             'cefpython3==56.1',
             'pygame==1.9.3',
             'PyOpenGL==3.1.0',
-            'numpy==1.12.1+mkl',
-            'opencv-python==3.2.0',
-            'scikit-learn==0.18.1'
+            'numpy==1.12.1',
+            'opencv-python==3.3.0.10',
+            'scipy==1.0.0',
+            'scikit-learn==0.19.0'
       ],
       zip_safe=False,
       entry_points={

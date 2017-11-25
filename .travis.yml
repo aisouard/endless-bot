@@ -1,0 +1,17 @@
+sudo: false
+
+language: python
+
+python:
+  - 3.4.3
+  - 3.5
+  - 3.6
+
+install:
+  - pip install coverage
+  - pip install -r requirements.txt
+  - python setup.py develop
+
+script:
+  - coverage run --source endless_bot -m unittest discover tests
+  - coverage report
