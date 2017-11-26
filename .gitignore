@@ -12,3 +12,5 @@
 
 # Coverage reports
 .coverage
+/htmlcov/
+error.log

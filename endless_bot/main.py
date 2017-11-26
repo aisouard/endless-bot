@@ -1,5 +1,10 @@
-import endless_bot
+# -*- coding: utf-8 -*-
+import sys
+
+from endless_bot.broadcaster import Broadcaster
+from endless_bot.utils.parse_args import parse_args
 
 
-def main():
-    print('Hello')
+if __name__ == "__main__":
+    args = parse_args(sys.argv[1:])
+    Broadcaster(args)
